@@ -32,13 +32,13 @@ public:
     void set_editora(string&);
     void set_ano(int);
     void set_genero(string&);
-    int get_id();
-    string get_titulo();
-    string get_autor();
-    string get_editora();
-    int get_ano();
-    string get_genero();
-    void imprime();
+    int get_id() const;
+    string get_titulo() const;
+    string get_autor() const;
+    string get_editora() const;
+    int get_ano() const;
+    string get_genero() const;
+    void imprime() const;
 };
 
 inline void Livros::set_livro(int id, string& titulo, string& autor, string& editora, int ano, string& genero) {
@@ -74,31 +74,31 @@ inline void Livros::set_genero(string& genero) {
     this->genero = genero;
 }
 
-inline int Livros::get_id() {
+inline int Livros::get_id() const {
     return id;
 }
 
-inline string Livros::get_titulo() {
+inline string Livros::get_titulo() const {
     return titulo;
 }
 
-inline string Livros::get_autor() {
+inline string Livros::get_autor() const {
     return autor;
 }
 
-inline string Livros::get_editora() {
+inline string Livros::get_editora() const {
     return editora;
 }
 
-inline int Livros::get_ano() {
+inline int Livros::get_ano() const {
     return ano;
 }
 
-inline string Livros::get_genero() {
+inline string Livros::get_genero() const {
     return genero;
 }
 
-inline void Livros::imprime() {
+inline void Livros::imprime() const {
     cout << "ID: " << id << endl << "Titulo: " << titulo << endl <<
         "Autor: " << autor << endl << "Editora: " << editora << endl <<
             "Ano: " << ano << endl << "Genero: " << genero << endl;

@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "poo",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "aula1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-aula1-Debug-23d465668839dbf0149f.json",
+					"name" : "aula1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "aula2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-aula2-Debug-2bcaeb50a88f5ee10e75.json",
+					"name" : "aula2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "aula3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-aula3-Debug-66fbf85f75355208b338.json",
+					"name" : "aula3",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/borgescaua/CLionProjects/poo/cmake-build-debug",
+		"source" : "/home/borgescaua/CLionProjects/poo"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

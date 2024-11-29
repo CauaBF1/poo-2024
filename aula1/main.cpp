@@ -14,6 +14,8 @@ using std::endl;
 using std::cin;
 
 int main() {
+    Livros* livroPtr;
+    livroPtr = new Livros;
     Livros livro;
 
     livro.set_id(1234);
@@ -57,5 +59,7 @@ int main() {
 
     livro.set_livro(id2, titulo2, autor2, editora2, ano2, genero2);
     livro.imprime();
+
+    delete livroPtr;
     return 0;
 }
