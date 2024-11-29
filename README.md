@@ -2,13 +2,13 @@
 
 Repositório destinado a armazenar os códigos e projetos implementados na disciplina de Programação Orientada a Objetos (POO).
 
-## Integrantes
+<!-- ## Integrantes
 - **Cauã Borges**
-- **Lucas Rodrigues**
+ **Lucas Rodrigues**
 - **Murilo Mantovani**
 - **Nicolas Magno**
 - **Ryan Augusto**
-
+-->
 ## Estrutura do Repositório
 
 Este repositório contém exercícios, projetos e exemplos práticos desenvolvidos ao longo do curso. Cada diretório está organizado de acordo com o conteúdo e a complexidade abordados em aula, visando facilitar o acesso e o acompanhamento do progresso.
