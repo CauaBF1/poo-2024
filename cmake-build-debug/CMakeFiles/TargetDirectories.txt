@@ -1,5 +1,0 @@
-/home/borgescaua/CLionProjects/poo/cmake-build-debug/CMakeFiles/aula1.dir
-/home/borgescaua/CLionProjects/poo/cmake-build-debug/CMakeFiles/aula2.dir
-/home/borgescaua/CLionProjects/poo/cmake-build-debug/CMakeFiles/aula3.dir
-/home/borgescaua/CLionProjects/poo/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/borgescaua/CLionProjects/poo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
