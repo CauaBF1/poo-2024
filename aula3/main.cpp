@@ -20,7 +20,7 @@ Fracao operator *(Fracao f1, Fracao f2){
 	return resultado;
 }
 
-// definida de forma global precisa ser friend da classe
+// definida de forma global precisa ser "friend" da classe
 bool operator>(int n, Fracao f){	
 	if ( n > (double)f.num/f.den)
 		return true;
