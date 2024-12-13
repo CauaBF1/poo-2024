@@ -4,7 +4,7 @@
 using std::cout;
 using std::cin;
 using std::endl;
-
+using namespace std;
 Fracao multiplica(Fracao f1, Fracao f2){
 	Fracao resultado;
 	resultado.setNum(f1.getNum()*f1.getNum());
@@ -27,21 +27,43 @@ bool operator>(int n, Fracao f){
 	return false;
 }
 
+Fracao operator++(Fracao f1){
+  f1.num = f1.num + f1.den;
+  return f1;
+}
+
+// Usando operator cout para imprimir funcao ao inves da funcao Imprimir() 
+ostream& operator<<(ostream & saida, Fracao f){
+  saida << f.num << "/" << f.den << endl;
+  return saida;
+}
+
+istream& operator>>(istream &entrada, Fracao &f){
+  int n;
+  int d;
+  entrada >> n;
+  entrada.ignore();
+  entrada >> d;
+  f.setNum(n);
+  f.setDen(d);
+  return entrada;
+}
 
 int main(){
 	Fracao f1(1,4), f2(1,2), f3, f4(7,2);
-	cout << "f1 = ";
-	f1.imprime();
+  cin >> f1;
+  cout << "f1 = ";
+	cout << f1;
 
 	cout << "f2 = ";
-	f2.imprime();	
+	cout << f2;	
 	
 	cout << "f3 = ";
 	f3 = f1.operator*(5);
-	f3.imprime();
+	cout << f3;
 
 	cout << "f4 = ";
-	f4.imprime();
+	cout << f4;
 // operator > frações
 	if(f1 > f2) { 
 		cout << "f1 maior que f2" << endl;
@@ -62,8 +84,11 @@ int main(){
 	}
 // incremento fracao
 	++f2;
-	f2.imprime();
-
+	cout << "F2 = " << f2;
+  
+// incremento pos
+  f3 = ++f1;
+  cout << "F3 = "<< f3;
 
 	return 0;
 }

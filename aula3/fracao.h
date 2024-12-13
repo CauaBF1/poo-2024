@@ -1,10 +1,12 @@
 #include <iostream>
+using namespace std;
 
 class Fracao{
 friend Fracao operator *(Fracao f1, Fracao f2); // fracao que pode acessar as coisas privadas da classe tambem
 friend bool operator>(int n, Fracao f);
-
-
+friend Fracao operator++(Fracao f1); 
+friend ostream& operator<<(ostream &saida, Fracao f);
+friend istream& operator>>(istream &entrada, Fracao &f);
 private:
 	int num;
 	int den;
@@ -20,7 +22,8 @@ public:
 	Fracao operator*(int n) const;
 	bool operator>(Fracao f2) const;
 	bool operator>(int n) const;
-	Fracao& operator++();
+	//Fracao& operator++();//pre
+  //Fracao operator++(int);//pos
 };
 
 Fracao::Fracao (int num, int den){
@@ -88,7 +91,19 @@ bool Fracao::operator>(int n) const{
 }
 
 // preciso fazer retorno por referencia, para que ++f1 = f3 funcione(exp se f1 = vetor)
-Fracao& Fracao::operator++(){
-	num = num + den;
-	return *this;
-}
+// Fracao& Fracao::operator++(){//pre 
+// 	num = num + den;
+// 	return *this;
+// }
+
+// Fracao Fracao::operator++(int){//pos
+//   Fracao copia(*this);
+//   num = num + den;
+//   return copia;
+// }
+//
+
+
+
+
+
